@@ -13,14 +13,14 @@ form.addEventListener('submit', e => {
 		form.q4.value
 	];
 
-	// Check answers
+	// Check answers..
 	userAnswers.forEach((answer, index) => {
 		if (answer === correctAnswers[index]) {
 			score += 25;
 		}
 	});
 
-	// Show result on page
+	// Show result on page..
 	scrollTo(0, 0);
 	result.querySelector('span').textContent = `${score}%`;
 	result.classList.remove('d-none');
